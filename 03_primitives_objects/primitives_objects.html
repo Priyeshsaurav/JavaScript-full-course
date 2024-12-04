@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>primitives and objects</title>
+</head>
+<body>
+    <script>
+        // nn ss bb u - primitive data type
+        let a = null;
+        let b = 1234;
+        let c = Symbol();
+        let d = "harry";
+        let e = true;
+        let f = BigInt("456") + BigInt("4");
+        let g = undefined;
+
+        console.log(a,b,c,d,e,f,g)
+        console.log(typeof a)
+        console.log(typeof b)
+        console.log(typeof c)
+        console.log(typeof d)
+        console.log(typeof e)
+        console.log(typeof f)
+        console.log(typeof g)
+
+        //objects non primitives data type
+        const item = {
+            "harry": true,
+            "saurav": false,
+            "ganesh": 234,
+            "rohan": undefined
+        }
+        console.log(item)
+        console.log(item["ganesh"])
+        console.log(item["saurav"])
+
+    </script>
+</body>
+</html>

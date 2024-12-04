@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practice on strings</title>
+</head>
+<body>
+    <script>
+        //problem:->1 what will be the following print in javascript! console.log("har\"".length)
+        let name = "har\""
+        console.log(name.length)
+
+        //explore the includes , startWith and endsWith functions of a string 
+
+        //problem 3:-> write a program to convert a given string to lowerCase?
+
+        let name1 = "HARRY"
+        console.log(name1.toLowerCase())
+
+        //problem 4:-> extract the amount out of this string "please give Rs1000"??
+        let str2 ="please give Rs 1000"
+        let amount = Number.parseInt(str2.slice.length)
+        console.log(amount)
+        console.log(typeof amount)
+
+        // problem 5:-> try to change 4th character of a given string were you able to do it??
+
+        let str3 = "priyesh" // here we can change the given string directly 
+        str3[3] = "d" 
+        console.log(str3)
+
+        let str4 = "priyesh" // here we can change the charater because of we store in a new varibale to string....
+        let newName = str4.replace("y","d")
+        console.log(newName)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>map_filter_and_reduce</title>
+</head>
+<body>
+    <script>
+        // Array map method:->
+        let arr = [32,42,53]
+        let a = arr.map((value,index,array)=>{
+            console.log(value,index,array)
+            return value + index
+        })
+        console.log(a)
+
+        //Array filter method:->
+        let arr2 = [2,1,9,32,43]
+        let a2 = arr2.filter((value)=>{
+            // console.log(a)
+            return value<10
+        })
+        console.log(a2)
+
+        //Array reduce method:->
+
+    </script>
+</body>
+</html>

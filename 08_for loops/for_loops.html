@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>for loops</title>
+</head>
+
+<body>
+    <script>
+
+        // for loop and its examples::->
+
+        let sum = 0;
+        let n = prompt("Enter a value of n");
+        n = Number.parseInt(n);
+        for (let i = 0; i < n; i++) {
+            sum += (i+1);
+        }
+        console.log("Sum of first " + n + " natural numbers is " + sum)
+
+        // let fact = 1;
+        // let n = prompt("enter a value of n")
+        // n = Number.parseInt(n)
+        // for(let i = 1; i<=n; i++){
+        //     fact = fact * i;
+        // }
+        // console.log(fact)
+
+        // for in loop:->
+        let obj ={
+            priyesh: 80,
+            saurav: 70,
+            deepak: 60,
+            dude: 40
+        }
+
+        //for in loop:->
+        for(let a in obj){
+            console.log("marks of " + a + " are " + obj[a] )
+        }
+
+        // // for of loop:-> when we talk about for of loop then it is like iterables data structure like array and string etc.
+        for(let b of "hardy")
+        console.log(b)
+
+    </script>
+</body>
+
+</html>

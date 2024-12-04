@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arrays Methods</title>
+</head>
+<body>
+    <script>
+        let marks = [90,80,70,60,50] // array methods toString()
+        let new_marks1 = marks.toString()
+        console.log(new_marks1)
+        // for(let i=0; i<marks.length;i++){ // this is for getting output for length and seperate one by one
+        //     console.log(marks[i])
+        // }
+
+        // array methods join()
+        let new_marks2 = marks.join("-")
+        console.log(new_marks2)
+
+        // array method pop():-> delete last element of an array
+        let new_marks3= marks.pop()
+        console.log(marks,new_marks3) //pop returns the popped element
+
+        // array method push():-> add new element at the end of an array
+        let new_marks4=marks.push(30)// push return the new array length
+        console.log(new_marks4,marks)
+
+        //array method shift():-> delete 1st element of an array
+        let new_marks5 = marks.shift()
+        console.log(new_marks5,marks)
+
+        //array method unshift():-> 
+        let marks6 = marks.unshift(10) // add a new element to the begining returns a new array length
+        console.log(marks6,marks)
+
+        //array method delete():->
+        let num = [1,2,3,4,5,6] // interview questio: that if you delete an element from this array its deleted but length is not changing
+        delete num[0]
+        console.log(num)
+
+        //array method concat():->
+        let a1 =[1,2,3]
+        let a2 =[4,5,6]
+        let a3 =[7,8,9]
+        let a4 = a1.concat(a2,a3)
+        console.log(a4)
+        let a5 = a2.concat(a1,a3)
+        console.log(a5)
+
+        //array method on sort
+        let num1 = [10,30,20,60,50,40]
+        num1.sort()
+        console.log(num1)
+        let newnum1 = num1.length  // this is for getiing lenth of the array.
+        console.log(newnum1,num1)
+
+        //How the Compare Function Works
+
+        // let num2 = [34,7,23,32,5,62]
+        // num2.sort()
+        // console.log(num2)
+        // num2.sort((a,b)=> (a-b))
+        // console.log("ascending :",num2) // ascending order
+        // num2.sort((a,b)=>(b-a))
+        // console.log("descending :",num2) // descending order
+
+        let compare = (a,b)=>{ // this is the first way of comparing function
+            return a-b
+        }
+        let num2 = [34,7,23,32,5,62]
+        num2.sort(compare)
+        console.log(num2)
+
+        let num3 = [34,7,23,32,5,62] // this is second way of comparing function
+        num3.sort((a,b)=>(a-b))
+        console.log(num3)
+
+        //Example: Sorting Strings Alphabetically
+        let words = ['banana','apple','cherry','date']
+        words.sort((a,b)=> a.localeCompare(b));
+        console.log("albhabetical :",words)
+
+        //Example: Sorting Objects by a Property
+        let people =[
+            {'name': 'priyesh',age: 20},
+            {'name': 'saurav',age: 19},
+            {'name': 'ajay', age: 21}
+    ]
+        people.sort((a,b)=> a.age-b.age)
+        console.log(people)
+        
+        // array methods on splice()
+        const numbers =[1,2,4,3,5]
+        numbers.splice(2,2,23,24) // In this code line 1st (2) is which index is initalized, then 2nd (2) how many element should be deleted and 23 and 24 is added to the deleted element
+        console.log(numbers)
+
+
+    </script>
+</body>
+</html>

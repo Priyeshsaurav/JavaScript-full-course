@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function in javascript</title>
+</head>
+<body>
+    <script>
+
+        const hello = ()=>{        // Arrow function this is another way to write function
+            console.log("hello ! i am javascript")
+            return "hi"
+        }
+        function onePlusAvg (x,y){             // normal function we are generally use
+            return Math.round(1+(x+y)/2);         
+        }
+        let a = 1;
+        let b = 2;
+        let c = 3;
+
+        let v = hello();    // we can take let v in this when return "hi" will display then v can print "hi"
+        console.log(v)
+        console.log("one plus avg of a and b is ", onePlusAvg(a,b)) //  this  is invoking (onePlusAvg)
+        console.log("one plus avg of a and b is ", onePlusAvg(b,c))
+        console.log("one plus avg of a and b is ", onePlusAvg(c,a))
+
+    </script>
+</body>
+</html>

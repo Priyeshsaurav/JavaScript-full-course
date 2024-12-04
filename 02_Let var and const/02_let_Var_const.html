@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>let var const</title>
+</head>
+<body>
+    <script>
+        // we can see here global scoped with var 
+        var a = 4;
+        let b = 8;
+        const author = "harry" // const can neither be updated nor be re-declared
+        //let author = 5 // throw an error beacuse constant can not be changed 
+        var a = 9; // you can see that var can be updated and redeclared
+
+        // while this is blocked scope
+        {
+            let a = 6;
+            console.log(b)
+        }
+        console.log(a)
+    </script>
+</body>
+</html>

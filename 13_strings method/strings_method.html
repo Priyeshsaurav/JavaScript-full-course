@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>strings Method</title>
+</head>
+<body>
+    <script>
+        let name = "harry"
+        console.log(name.length)
+        console.log(name.toUpperCase())
+        console.log(name.toLowerCase())
+        console.log(name.slice(2,3))
+        console.log(name.slice(2))               //slice method
+        console.log(name.replace("ha","pa"))
+
+        let name1 = "jack bhai"
+        let newName = name1.replace("bhai","bhau") //replace method
+        console.log(newName)
+
+        let name3 = "naman"
+        let name4 = "jack"
+        console.log(name3.concat(" is a friend of"),name4,"ok") // concat method
+        
+        let name5 = "    laila   "
+        let newName4 = name5.trim()
+        console.log(newName4)
+
+        //Quiz:-> use a for loop to print a string
+        let fr = "harry"
+        // console.log(fr[0])
+        for(let i =0; i<fr.length; i++)
+        console.log(fr[i])
+
+    </script>
+</body>
+</html>

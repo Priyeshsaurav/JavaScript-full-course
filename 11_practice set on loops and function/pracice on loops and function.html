@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice set on loops and function</title>
+</head>
+<body>
+    <script>
+        //problem 1:-> write a program to print the marks of a student in an object using for loop?
+        let marks = {
+            harry: 98,
+            rohan: 70,
+            akash: 60
+        }
+        for(let b in marks){ // this is latest way to solve for loops  
+            console.log("marks of " + b + " are " + marks[b])
+        }
+
+        // // for(let i=0; i<Object.keys(marks).length; i++){  // this is old way to solve for loops 
+        // //     console.log("marks of " + Object.keys(marks)[i] + " are " + marks[Object.keys(marks)[i]])
+        // // }
+
+        // problem 2:-> write a program to print "try again" until the user enters the correct number?
+            // let cn = 43
+            // let i
+            // while( i != cn){
+            //     console.log("try again")
+            // i = prompt("enter a number")
+            // }
+            // console.log("you have entered a correct number")
+
+            //problem 3:-> write a function to find mean of 5 members?
+
+            const mean = (e,f,g,h,i)=>{
+                return (e+f+g+h+i)/5;
+            }
+            let a = 1;
+            let b = 10;
+            let c = 13;
+            let d = 4;
+            let e = 5;
+
+            console.log(" mean of 5 numbers are ", mean(a,b,c,d,e))
+            console.log(" mean of 5 numbers are ", mean(a,b,d,c,e))
+
+
+
+    </script>
+</body>
+</html>
