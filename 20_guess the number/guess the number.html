@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>guess the number</title>
+</head>
+
+<body>
+    <script>
+        /* write a javaScript program to generate a random number and store it in a variable.
+           The program then takes an input from the user to tell them whether the guess was correct,
+           greater or lesser than the original number. 100(no. of guesses) is the score of the user
+           the program is expected to terminate once the number is gussed. Number should be between 1 - 100 */
+
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+        let score = 100;
+        //keep asking for a number untill the correct number is gussed 
+        // increment the chance variable 
+        // eventually after the game is over, display the(100 - number of chances ) and the actual  numnber
+        while (true) {
+            let userGuess = Number(prompt("Guess a number between 1 and 100:"));
+
+            if (userGuess === randomNumber) {
+                alert(`Congratulations! You guessed it right. The number was ${randomNumber}. Your score is ${score}.`);
+                break;
+            }
+            else if (userGuess > randomNumber) {
+                alert("Too high! Try again.");
+            }
+            else if (userGuess < randomNumber) {
+                alert("Too low! Try again.");
+            } else {
+                alert("Invalid input! Please enter a number between 1 and 100.");
+            }
+
+            score--; // Reduce score for each incorrect guess
+        }
+    </script>
+</body>
+
+</html>
