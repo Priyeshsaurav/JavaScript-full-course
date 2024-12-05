@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice set on arrays</title>
+</head>
+<body>
+    <script>
+        //Problem1:-> create an array of numbers and take input from the user to add numbers to this array
+        // without inbuilt function
+
+        // let arr1 = [10,11,12,13,14]
+        // let a = prompt("enter a number") // this is taking user input and without inbuilt function
+        // // n = Number.parseInt(n)
+        // arr1[arr1.length] =a
+        // console.log(arr1)
+
+        // let arr2 = [10,11,12,13,14] // this is without taking userinput and inbuilt function
+        // let num = 4
+        // arr2[arr2.length] =num
+        // console.log(arr2)
+
+        // // with inbuilt function
+        // let arr3 = [10,11,12,13,14]
+        // let a1 = prompt("enter a number")
+        // arr3.push(a1)
+        // console.log(arr3)
+
+        //problem2:-> keep adding numbers to the array in until zero is added to the array
+        let arr = [10,11,12,13,14,15]
+        let a;
+        do{
+            a =prompt("enter a number")
+            a= Number.parseInt(a)
+            arr.push(a)
+        }while(a!=0)
+        console.log(arr)
+
+        //Problem3:-> filter for numbers divisible by 10 from a given array
+        let arr1 = [10,20,30,40,45,46,47]
+        let n3 = arr1.filter((x)=>{
+            return x%10==0;
+        })
+        console.log(n3)
+
+        //Problem4:-> create an array of square of given numbers
+        let arr2 = [12,13,14,15,16,27]
+        let n4 = arr2.map((x)=>{
+            return x*x
+        })
+        console.log(n4)
+
+        // use reduce to calculate factorial of a given number from an array of first n natural numbers.(n being the number whose factorial needs to be calculated)
+        let arr5 = [4,5,6,7,8,9]
+        let n1 = arr5.reduce((x1,x2)=>{
+            return x1*x2;
+        })
+        console.log(n1)
+    </script>
+</body>
+</html>
