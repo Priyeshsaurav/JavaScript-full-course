@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Browser events</title>
+  </head>
+  <body>
+    <div class="container" onmouseenter="alert('container ke ander')">
+      <button onclick="alert('hello')">click me</button>
+      <p>Select a new car from a list</p>
+      <select id="myselect" onChange="myFunction()">
+        <option value="Audi">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="BMW">BMW</option>
+        <option value="Volvo">Volvo</option>
+      </select>
+      <p>
+        When a select a new car, a function is triggered which outputs the value
+        of the selected car
+      </p>
+      <p id="demo"></p>
+      <p>
+        Modify the text in the input field, then click outside the field to fire
+        the onChange events
+      </p>
+      Enter some text:<input
+        type="tet"
+        name="text"
+        value="hello"
+        onchange="myChange(this.value)"
+      />
+      <p>
+        When you enter the input field, a function is triggered which sets the
+        the backgroumnd color to yellow.When you leave the input field, a
+        function is triggered which sets the background color to red.
+      </p>
+      Enter your name:
+      <input
+        type="text"
+        id="myInput"
+        onfocus="focusFunction()"
+        onblur="blurFunction()"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
