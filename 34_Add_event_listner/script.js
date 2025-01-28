@@ -1,6 +1,6 @@
 let x = function(e){   
     console.log(e.target)
-    console.log(e.target.value)   // here you can see (e) means ponterEvent and this is event object
+    console.log(e.target.value)   // here you can see (e) means pointerEvent and this is event object
     alert('hello world1');
 }
 
