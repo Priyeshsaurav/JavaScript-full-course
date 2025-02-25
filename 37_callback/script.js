@@ -48,18 +48,20 @@ function loadScript(src,callback){
     script.src = src
     script.onload = function() {
         console.log("loaded script with SRC: " + src)
-        callback();
+        callback(null,src);
     }
     script.onerror = function(){
         console.log("Error loading script with src" + src)
+        callback(new Error("src got some error"))
     }
     document.body.appendChild(script)
 }
-function hello(){
-    alert("hello world");
-}
-function goodmorning(){
-    alert("good achive");
+function hello(error,src){
+    if(error){
+        console.log(error)
+        return
+    }
+    alert('hello world' + src)
 }
 loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",hello)
 
